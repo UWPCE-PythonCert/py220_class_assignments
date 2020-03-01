@@ -5,6 +5,7 @@ Instructor clones this to class repo.
 Students clone from class repo.
 
 Students run
+
     set_me_up <anme>
 
 to create their repo

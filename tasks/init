@@ -1,0 +1,15 @@
+#!/bin/sh
+
+structure $project
+  window editor
+    vsplit
+      pane right
+        run "python -m venv venv && source venv/bin/activate && vim ."
+      pane left
+        hsplit
+          run "python -m venv venv && source venv/bin/activate && git status"
+      pane down
+          run "python -m venv venv && source venv/bin/activate && python"
+
+focus editor
+connect $project
